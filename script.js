@@ -1,5 +1,3 @@
-
-const date = new Date().toLocaleDateString("en-US");
-document.querySelector('[data-js="year"]').textContent =
-  new Date().getFullYear();
-
+const yearElement = document.querySelector('[data-js="year"]');
+const date = new Date().getDate();
+yearElement.textContent = date;
